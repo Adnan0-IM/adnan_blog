@@ -3,8 +3,8 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 1
 
-title = "Adnan's Blog Site"
-# copyright = "Copy, _right?_ :thinking_face:"
+title = "Adnan's Blog"
+copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
   dateFormat = "2 January 2006"
