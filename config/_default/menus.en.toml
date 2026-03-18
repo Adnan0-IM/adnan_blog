@@ -16,8 +16,6 @@
   weight = 10
 
 [[main]]
-
-[[main]]
   name = "Tags"
   pageRef = "tags"
   weight = 30
