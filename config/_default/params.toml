@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 defaultThemeColor = "#FFFFFF"
 
 enableSearch = true
-enableCodeCopy = false
+enableCodeCopy = true
 enableImageLazyLoading = true
 enableImageWebp = true
 
@@ -20,9 +20,9 @@ enableImageWebp = true
 fingerprintAlgorithm = "sha256"
 
 [header]
-  layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
-   logo = "img/logo.png"
-   logoDark = "img/dark-logo.jpg"
+  layout = "basic" # valid options: basic, hamburger, hybrid, custom
+   #logo = "img/logo.jpg"
+  # logoDark = "img/dark-logo.jpg"
   showTitle = true
 
 [footer]
@@ -34,11 +34,11 @@ fingerprintAlgorithm = "sha256"
 [homepage]
   layout = "page" # valid options: page, profile, custom
   showRecent = true
-  recentLimit = 5
+  recentLimit = 8
 
 [article]
   showDate = true
-  showDateUpdated = false
+  showDateUpdated = true
   showAuthor = true
   showBreadcrumbs = true
   showDraftLabel = true
@@ -49,9 +49,9 @@ fingerprintAlgorithm = "sha256"
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = false
-  showTaxonomies = false
-  showWordCount = false
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = true
   showComments = false
   # sharingLinks = ["facebook", "x-twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "threads", "telegram", "line", "weibo", "xing", "bluesky"]
 
@@ -59,7 +59,7 @@ fingerprintAlgorithm = "sha256"
   showBreadcrumbs = false
   showSummary = true
   showTableOfContents = false
-  showTaxonomies = false
+  showTaxonomies = true
   groupByYear = true
   paginationWidth = 1
 
