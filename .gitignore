@@ -79,7 +79,6 @@ resources/
 static/__generated__/
 test/
 tests/
-themes/*/
 
 .hugo_build.lock
 # ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
