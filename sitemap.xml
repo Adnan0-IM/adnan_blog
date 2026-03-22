@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://blog.adnanilyas.dev/</loc>
+  <lastmod>2026-03-22T10:23:20+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/</loc>
+  <lastmod>2026-03-22T10:23:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/</loc>
+  <lastmod>2026-03-22T10:23:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/from-bug-to-post-complete-example/</loc>
+  <lastmod>2026-03-22T10:23:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/categories/writing/</loc>
+  <lastmod>2026-03-22T10:23:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/writing/</loc>
+  <lastmod>2026-03-22T10:23:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/debugging/</loc>
+  <lastmod>2026-03-22T10:23:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/workflow/</loc>
+  <lastmod>2026-03-22T10:23:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/long-form-how-i-structure-technical-posts/</loc>
+  <lastmod>2026-03-22T10:23:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/tutorials/</loc>
+  <lastmod>2026-03-22T10:23:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/communication/</loc>
+  <lastmod>2026-03-22T10:23:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/hugo-front-matter-cheatsheet/</loc>
+  <lastmod>2026-03-22T10:23:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/categories/hugo/</loc>
+  <lastmod>2026-03-22T10:23:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/hugo/</loc>
+  <lastmod>2026-03-22T10:23:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/setup/</loc>
+  <lastmod>2026-03-22T10:23:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/blogging/</loc>
+  <lastmod>2026-03-22T10:23:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/my-blog-production-checklist/</loc>
+  <lastmod>2026-03-22T10:23:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/categories/publishing/</loc>
+  <lastmod>2026-03-22T10:23:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/quality/</loc>
+  <lastmod>2026-03-22T10:23:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/clean-commit-routine/</loc>
+  <lastmod>2026-03-22T10:23:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/categories/dev-workflow/</loc>
+  <lastmod>2026-03-22T10:23:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/git/</loc>
+  <lastmod>2026-03-22T10:23:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/first-post/</loc>
+  <lastmod>2026-03-22T10:23:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/another-post/</loc>
+  <lastmod>2026-03-22T10:23:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/productivity/</loc>
+  <lastmod>2026-03-22T10:23:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/quick-debugging-checklist/</loc>
+  <lastmod>2026-03-22T10:23:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/categories/engineering/</loc>
+  <lastmod>2026-03-22T10:23:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/learning-log-template/</loc>
+  <lastmod>2026-03-22T10:23:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/categories/notes/</loc>
+  <lastmod>2026-03-22T10:23:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/learning/</loc>
+  <lastmod>2026-03-22T10:23:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/tiny-note-terminal-aliases/</loc>
+  <lastmod>2026-03-22T10:23:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/categories/quick-notes/</loc>
+  <lastmod>2026-03-22T10:23:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/tags/terminal/</loc>
+  <lastmod>2026-03-22T10:23:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/tiny-note-post-ideas-list/</loc>
+  <lastmod>2026-03-22T10:23:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/tiny-note-better-commit-messages/</loc>
+  <lastmod>2026-03-22T10:23:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/posts/page/2/</loc>
+  <lastmod>2026-03-22T10:23:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.adnanilyas.dev/categories/</loc>
+  <lastmod>2026-03-22T10:23:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
