@@ -1,10 +1,8 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
-  "build": {
-    "command": "git submodule update --init --recursive && hugo --minify",
-    "env": {
-      "HUGO_VERSION": "0.128.0"
-    }
+  "buildCommand": "hugo --minify",
+  "env": {
+    "HUGO_VERSION": "0.128.0"
   }
 }
