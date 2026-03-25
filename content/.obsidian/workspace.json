@@ -1,0 +1,264 @@
+{
+  "main": {
+    "id": "42206a04eef9fbbb",
+    "type": "split",
+    "children": [
+      {
+        "id": "f838d3cd3411eba0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2b4969000c89e9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/mern-pern-docker-setup/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "1fa1e30bd09f7b12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/peaceful-moment/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8bb9ad7478a27075",
+    "type": "split",
+    "children": [
+      {
+        "id": "25f2492ddde24d3e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04e2be8b2e1a8d5c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "01671c33626ed58e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f9d820a439b1a466",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "67f4a540b59c7172",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "recent-files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fc12f73f23fc46d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9705c5220512fa9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "132401b6171fac92",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/peaceful-moment/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "6553027fe3dee2cf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/peaceful-moment/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "718a6fba61784728",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "536d994c369b3338",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "54d78371b09941c0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/peaceful-moment/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          },
+          {
+            "id": "1ae5e58b78992bfe",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 420.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "workspaces:Manage workspace layouts": false,
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": true,
+      "command-palette:Open command palette": true,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "canvas:Create new canvas": false,
+      "templater-obsidian:Templater": false,
+      "random-note:Open random note": false,
+      "seo:Open SEO audit panel": false,
+      "astro-composer:Open project terminal": false,
+      "astro-composer:Edit astro config": false
+    }
+  },
+  "active": "1ae5e58b78992bfe",
+  "lastOpenFiles": [
+    "about.md",
+    "Templates/post-bundle.md",
+    "posts/blabbla-new-blab-bla/index.md",
+    "posts/blabbla-new-blab-bla",
+    "posts/peaceful-moment/index.md",
+    "posts/mern-pern-docker-setup/index.md",
+    "posts/peaceful-moment-b/index.md",
+    "posts/peaceful-moment",
+    "posts/blabla/index.md",
+    "posts/ntitled 1.md",
+    "posts/blabla",
+    "posts/new/index.md",
+    "_index.md",
+    "posts/new",
+    "posts/three-four-five/index.md",
+    "posts/three-four-five",
+    "posts/one-two-working/index.md",
+    "posts/one-two-working",
+    "posts/one-two/index.md",
+    "posts/one-two",
+    "posts/blabla-five-one/index.md",
+    "posts/blabla-five-one",
+    "posts/blablafive/index.md",
+    "Templates/post.md",
+    "posts/index.md",
+    "posts/_index.md",
+    "posts/blablafive",
+    "scripts/new_hugo_post_bundle.js",
+    "scripts/new-hugo-post-bundle.js.md",
+    "posts/prison-break-lesson/index.md",
+    "posts/post-bundle.md",
+    "posts/prison break lesson 1.md",
+    "Templates.md",
+    "posts/another-post/index.md",
+    "posts/tiny-note-better-commit-messages.md"
+  ]
+}

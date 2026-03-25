@@ -1,0 +1,18 @@
+{
+  "accentColor": "#43cfea",
+  "cssTheme": "Primary",
+  "interfaceFontFamily": "JetBrainsMono Nerd Font Mono",
+  "textFontFamily": "JetBrainsMono Nerd Font Mono",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
+  "enabledCssSnippets": [
+    "retro-notebook-bg",
+    "Daily Note",
+    "Japanese Fonts",
+    "Daily Note Themes",
+    "CyanVoxel's General Tweaks",
+    "Colored Sidebar Items"
+  ],
+  "translucency": false,
+  "theme": "obsidian",
+  "baseFontSize": 17
+}
