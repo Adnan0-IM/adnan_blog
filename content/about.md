@@ -7,6 +7,9 @@ description: Hi, I’m Adnan. I build software and document what I learn about s
 
 Hi, I’m Adnan. I build software and document what I learn along the way. I’m focused on self-development and improvement. This blog shares my life experiences and lessons—writing that entertains or helps people in any way.
 
+
+Check out my [portfolio](https://adnanilyas.dev/) to see what I do. You can also connect with me on [LinkedIn](https://www.linkedin.com/in/adnan-aziz/) or [GitHub](https://github.com/Adnan0-IM)
+
 ## About Me
 
 I’m a software developer with a passion for learning, self-improvement, and sharing knowledge. I enjoy exploring new technologies, reflecting on life, and writing about the things that matter to me. My journey in tech started out of curiosity and a desire to solve real-world problems.
