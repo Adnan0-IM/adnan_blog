@@ -9,7 +9,7 @@ tags:
   - ideas
   - reflection
   - thoughts
-categories: notes
+categories: blabla
 ---
 Content
 

@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "blabla",
+      "path": "posts/blabla.md"
+    },
+    {
+      "basename": "index",
+      "path": "posts/software/how-to-set-up-docker-for-a-web-app-beginner-guide/index.md"
+    },
+    {
+      "basename": "_index",
+      "path": "_index.md"
+    },
+    {
       "basename": "index",
       "path": "posts/notes/small-observations-that-stick-with-me/index.md"
+    },
+    {
+      "basename": "_index",
+      "path": "posts/notes/_index.md"
     },
     {
       "basename": "Home",
@@ -11,10 +27,6 @@
     {
       "basename": "index",
       "path": "posts/life/why-i-value-quiet-places-more-than-anything/index.md"
-    },
-    {
-      "basename": "index",
-      "path": "posts/software/how-to-set-up-docker-for-a-web-app-beginner-guide/index.md"
     },
     {
       "basename": "index",
@@ -31,10 +43,6 @@
     {
       "basename": "about",
       "path": "about.md"
-    },
-    {
-      "basename": "_index",
-      "path": "_index.md"
     },
     {
       "basename": "feature",
