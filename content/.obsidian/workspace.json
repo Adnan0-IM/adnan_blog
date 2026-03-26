@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "eb986c19be2fb644",
+            "id": "a9ba319c5cfb2679",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/blabla.md",
+                "file": "posts/small-observations-that-stick-with-me/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "blabla"
+              "title": "index"
             }
           }
         ]
@@ -209,21 +209,28 @@
       "home-base:Open home base": false
     }
   },
-  "active": "eb986c19be2fb644",
+  "active": "a9ba319c5cfb2679",
   "lastOpenFiles": [
-    "posts/software/how-to-set-up-docker-for-a-web-app-beginner-guide/index.md",
-    "_index.md",
-    "posts/blabla.md",
-    "posts/notes/small-observations-that-stick-with-me/index.md",
-    "posts/notes/_index.md",
-    "bases/Home.base",
+    "posts/small-observations-that-stick-with-me",
+    "posts/small-observations-that-stick-with-me/index.md",
+    "posts/new-post/index.md",
+    "posts/new-post",
     "posts/life/why-i-value-quiet-places-more-than-anything/index.md",
+    "posts/software/how-to-set-up-docker-for-a-web-app-beginner-guide/index.md",
+    "posts/software/how-to-set-up-docker-for-a-web-app-beginner-guide/feature.jpg",
+    "posts/notes/small observations/feature.jpg",
+    "posts/notes/small observations/index.md",
+    "posts/notes/blabla.md",
+    "posts/notes/small-observations-that-stick-with-me/index.md",
+    "posts/notes/small observations",
+    "posts/notes/_index.md",
+    "_index.md",
+    "bases/Home.base",
     "posts/notes/small-observations-that-stick-with-me",
     "posts/growth/what-t-bag-from-prison-break-taught-me-about-not-playing-the-victim/index.md",
     "posts/_index.md",
     "posts/new-title/index.md",
     "posts/new-title",
-    "posts/software/how-to-set-up-docker-for-a-web-app-beginner-guide/feature.jpg",
     "about.md",
     "posts/notes",
     "posts/life",
@@ -238,12 +245,10 @@
     "post/my-new-post.md",
     "post",
     "posts/new/index.md",
-    "posts/test",
     "posts/hy-new-one/index.md",
     "posts/haha-blabla.md",
     "posts/blabla/index.md",
     "posts/another-onw/index.md",
-    "posts/blabla",
     "Templates/post-bundle.md",
     "posts/new/cover.png",
     "posts/new/thumbnail.png",
@@ -251,9 +256,6 @@
     "attachments/haha-blabla.png.md",
     "posts/blabbla-new-blab-bla/index.md",
     "posts/peaceful-moment-b/index.md",
-    "posts/ntitled 1.md",
-    "posts/three-four-five/index.md",
-    "posts/one-two-working/index.md",
-    "posts/one-two/index.md"
+    "posts/ntitled 1.md"
   ]
 }
