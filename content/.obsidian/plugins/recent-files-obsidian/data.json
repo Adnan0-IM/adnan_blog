@@ -2,31 +2,39 @@
   "recentFiles": [
     {
       "basename": "index",
-      "path": "posts/peaceful-moment/index.md"
+      "path": "posts/prison-break-lesson/index.md"
     },
     {
-      "basename": "about",
-      "path": "about.md"
-    },
-    {
-      "basename": "post-bundle",
-      "path": "Templates/post-bundle.md"
+      "basename": "Home",
+      "path": "bases/Home.base"
     },
     {
       "basename": "index",
       "path": "posts/mern-pern-docker-setup/index.md"
     },
     {
-      "basename": "_index",
-      "path": "_index.md"
+      "basename": "index",
+      "path": "posts/peaceful-moment/index.md"
+    },
+    {
+      "basename": "feature",
+      "path": "posts/mern-pern-docker-setup/feature.jpg"
+    },
+    {
+      "basename": "feature",
+      "path": "posts/prison-break-lesson/feature.png"
     },
     {
       "basename": "_index",
       "path": "posts/_index.md"
     },
     {
-      "basename": "index",
-      "path": "posts/prison-break-lesson/index.md"
+      "basename": "about",
+      "path": "about.md"
+    },
+    {
+      "basename": "_index",
+      "path": "_index.md"
     },
     {
       "basename": "20260323",

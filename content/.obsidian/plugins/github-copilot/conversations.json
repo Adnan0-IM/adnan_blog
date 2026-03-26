@@ -340,10 +340,109 @@
           "content": "## Templater user-script solution (vault root = `content/`)\nThis gives you a command in Obsidian that:\n- asks for the post title\n- slugifies it\n- creates `posts/<slug>/index.md`\n- writes front matter + sections (Congo/Hugo-friendly)\n- opens the new file  \nNo “Untitled” notes involved.\n\n---\n\n## 1) Enable Templater “User scripts”\n1. Create a folder in your vault, e.g.:\n   - `scripts/`\n2. Obsidian → Settings → **Templater**\n   - **User scripts folder** → select `scripts/`\n\n---\n\n## 2) Create the script file\nCreate this file:\n\n**`content/scripts/new-hugo-post-bundle.js`**  \n(because your vault root is `content/`, the path in Obsidian is just `scripts/new-hugo-post-bundle.js`)\n\nPaste:\n\n```js\nmodule.exports = async (tp) => {\n  const title = await tp.system.prompt(\"Post title\");\n  if (!title) return;\n\n  const slug = title\n    .toLowerCase()\n    .trim()\n    .replace(/['\"]/g, \"\")\n    .replace(/[^a-z0-9]+/g, \"-\")\n    .replace(/^-+|-+$/g, \"\");\n\n  const folder = `posts/${slug}`;\n  const path = `${folder}/index.md`;\n\n  // Create folder if needed\n  try { await app.vault.createFolder(folder); } catch (e) {}\n\n  // Abort if exists\n  if (app.vault.getAbstractFileByPath(path)) {\n    new Notice(`Already exists: ${path}`);\n    return;\n  }\n\n  const safeTitle = title.replace(/\\\\/g, \"\\\\\\\\\").replace(/\"/g, '\\\\\"');\n\n  const content =\n`---\ntitle: \"${safeTitle}\"\ndate: ${tp.date.now(\"YYYY-MM-DDTHH:mm:ss\")}\ndraft: true\nslug: \"${slug}\"\ndescription: \"\"\ntags: []\ncategories: []\n---\n\nWrite a strong opening paragraph (this becomes the Summary).\n\n<!--more-->\n\n## TL;DR\n- \n\n## Outline\n- \n\n## Draft\n### \n\n## Notes / Sources\n- \n`;\n\n  const file = await app.vault.create(path, content);\n\n  // Open in a new leaf\n  await app.workspace.getLeaf(true).openFile(file);\n\n  new Notice(`Created ${path}`);\n};\n```\n\n---\n\n## 3) Run it from Obsidian\nOpen Command Palette → search:\n- **Templater: Run user script**\nChoose: `new-hugo-post-bundle`\n\nIt will create:\n- `posts/<slug>/index.md`\n\n---\n\n## 4) (Optional) Make it a single command / hotkey\n- Settings → **Hotkeys**\n- Search: “Templater: Run user script”\n- Assign a hotkey to it  \nTemplater doesn’t always let you bind a hotkey to a specific script directly; if yours can’t, you can use the Command Palette and pick the script, or install **Commander** to bind a specific script.\n\n---\n\n### Writing content with it (Hugo/Congo)\n- Fill `description` with 1 clean sentence (SEO/blurb).\n- Write 2–5 sentences above `<!--more-->` → that’s the **Summary** on list pages.\n- Write the rest under `## Draft`.\n\nIf you want, I can tweak the script to also prompt you for `description` and initial tags/categories so you don’t have to fill front matter manually.",
           "role": "assistant",
           "timestamp": 1774461601958
+        },
+        {
+          "id": "1774517085272",
+          "content": "https://jpanther.github.io/congo/docs/front-matter/ [[index]] why are cover and thumnail not showing , only feature is showing",
+          "role": "user",
+          "timestamp": 1774517085272,
+          "linkedNotes": [
+            {
+              "path": "posts/prison-break-lesson/index.md",
+              "filename": "index",
+              "content": "---\ntitle: There is more to Prison Break than just breaking out of the prison\ndate: 2026-03-23T23:12:00\ndraft: false\ndescription: A reflection on what Prison Break—especially T-Bag’s story—teaches about trauma, resilience, and refusing a victim mindset.\ntags:\n  - lessons\n  - series\ncategories:\n  - Learning\n---\n\nWhile watching *Prison Break*, I kept noticing Theodore “T-Bag” Bagwell—clearly intelligent, clearly dangerous, and doing things most sane people wouldn’t do. But the part that stayed with me wasn’t only the chaos he caused; it was what his story suggests about pain, purpose, and the choice to keep going.\n\n<!--more-->\n\nWhat seemed to shape Theo into who he became was his abusive father—someone who used him and damaged him early. That kind of beginning can easily become an excuse to stop trying, to surrender to anger, or to live permanently as a victim of what was done to you.\n\nBut T-Bag refused that role.\n\nEven in prison, he didn’t give up. He adapted. He survived. And when they finally broke out, he still didn’t “disappear” the way many people would if they were free. He could have vanished and never been seen again, but instead he continued chasing what he wanted—almost like he needed a reason to keep moving.\n\nThere’s a moment where he meets a woman, and she realizes he’s a wanted man. She calls the cops. What stood out to me is that he doesn’t harm her. He actually seems to love her, and in his own broken way he wants a real life: to be with her and help raise her children. Of course, she can’t accept him once she knows what he’s done—and she shouldn’t have to.\n\nSo he leaves her without hurting her.\n\nAnd then he keeps going—looking for something that feels like purpose, something that makes life worth continuing. In the end, the lesson I pulled from this isn’t that his actions were justified (they weren’t). It’s that even someone deeply damaged can still refuse to be only a product of their past.\n\nHe refuses to be a victim—of prison, of his childhood, or even of his own mind.\n"
+            }
+          ]
+        },
+        {
+          "id": "1774517111943",
+          "content": "https://jpanther.github.io/congo/docs/front-matter/ [[index]] why are cover and thumnail not showing , only feature is showing",
+          "role": "user",
+          "timestamp": 1774517111943,
+          "linkedNotes": [
+            {
+              "path": "posts/prison-break-lesson/index.md",
+              "filename": "index",
+              "content": "---\ntitle: There is more to Prison Break than just breaking out of the prison\ndate: 2026-03-23T23:12:00\ndraft: false\ndescription: A reflection on what Prison Break—especially T-Bag’s story—teaches about trauma, resilience, and refusing a victim mindset.\ntags:\n  - lessons\n  - series\ncategories:\n  - Learning\n---\n\nWhile watching *Prison Break*, I kept noticing Theodore “T-Bag” Bagwell—clearly intelligent, clearly dangerous, and doing things most sane people wouldn’t do. But the part that stayed with me wasn’t only the chaos he caused; it was what his story suggests about pain, purpose, and the choice to keep going.\n\n<!--more-->\n\nWhat seemed to shape Theo into who he became was his abusive father—someone who used him and damaged him early. That kind of beginning can easily become an excuse to stop trying, to surrender to anger, or to live permanently as a victim of what was done to you.\n\nBut T-Bag refused that role.\n\nEven in prison, he didn’t give up. He adapted. He survived. And when they finally broke out, he still didn’t “disappear” the way many people would if they were free. He could have vanished and never been seen again, but instead he continued chasing what he wanted—almost like he needed a reason to keep moving.\n\nThere’s a moment where he meets a woman, and she realizes he’s a wanted man. She calls the cops. What stood out to me is that he doesn’t harm her. He actually seems to love her, and in his own broken way he wants a real life: to be with her and help raise her children. Of course, she can’t accept him once she knows what he’s done—and she shouldn’t have to.\n\nSo he leaves her without hurting her.\n\nAnd then he keeps going—looking for something that feels like purpose, something that makes life worth continuing. In the end, the lesson I pulled from this isn’t that his actions were justified (they weren’t). It’s that even someone deeply damaged can still refuse to be only a product of their past.\n\nHe refuses to be a victim—of prison, of his childhood, or even of his own mind.\n"
+            }
+          ]
+        },
+        {
+          "id": "1774519041859",
+          "content": "hy",
+          "role": "user",
+          "timestamp": 1774519041859
+        },
+        {
+          "id": "1774519054248",
+          "content": "hy",
+          "role": "user",
+          "timestamp": 1774519054248
+        },
+        {
+          "id": "chatcmpl-DNbl258jjf7QBWBMHNomkKRRc0XBx",
+          "content": "Hi! If you're having trouble with the `cover` and `thumbnail` images not showing in your Congo theme, but `feature` is working, it might be due to a few common issues. Let's troubleshoot:\n\n### 1) Check Front Matter Syntax\nEnsure your front matter is correctly formatted. Example:\n\n```yaml\n---\ntitle: \"My Post\"\ndate: 2026-03-23T23:00:00\ndraft: false\ncover: \"/images/cover.jpg\"\nthumbnail: \"/images/thumbnail.jpg\"\nfeature: \"/images/feature.jpg\"\n---\n```\n\n### 2) Verify Image Paths\n- **Absolute vs. Relative Paths**: Make sure the paths are correct. If your images are in the `static` folder, use absolute paths like `/images/cover.jpg`.\n- **File Existence**: Double-check that the images exist at the specified paths.\n\n### 3) Theme Configuration\n- **Congo Settings**: Some themes require enabling certain features in the configuration file (e.g., `config.toml`). Check if there are settings related to `cover` or `thumbnail` that need to be enabled.\n\n### 4) Check Theme Templates\n- **Template Overrides**: If you’ve customized any templates, ensure they correctly reference `cover` and `thumbnail`.\n- **Theme Updates**: Make sure you’re using the latest version of Congo, as older versions might not support all front matter fields.\n\n### 5) Clear Cache\n- **Hugo Cache**: Sometimes, Hugo’s cache can cause issues. Try running `hugo server --disableFastRender` to see if it resolves the issue.\n\n### 6) Inspect with Browser Dev Tools\n- **Console Errors**: Use your browser’s developer tools to check for any console errors or missing resource errors.\n\nIf you provide more details about your setup or any error messages, I can help further diagnose the issue.",
+          "role": "assistant",
+          "timestamp": 1774519060343
+        },
+        {
+          "id": "1774519173760",
+          "content": "[[index]] check the image property shows a top image at the top why how do i remove it is there a plugin that makes that possible",
+          "role": "user",
+          "timestamp": 1774519173760,
+          "linkedNotes": [
+            {
+              "path": "posts/prison-break-lesson/index.md",
+              "filename": "index",
+              "content": "---\ntitle: There is more to Prison Break than just breaking out of the prison\ndate: 2026-03-23T23:12:00\ndraft: false\ndescription: A reflection on what Prison Break—especially T-Bag’s story—teaches about trauma, resilience, and refusing a victim mindset.\ntags:\n  - lessons\n  - series\ncategories:\n  - Learning\n---\n\nWhile watching *Prison Break*, I kept noticing Theodore “T-Bag” Bagwell—clearly intelligent, clearly dangerous, and doing things most sane people wouldn’t do. But the part that stayed with me wasn’t only the chaos he caused; it was what his story suggests about pain, purpose, and the choice to keep going.\n\n<!--more-->\n\nWhat seemed to shape Theo into who he became was his abusive father—someone who used him and damaged him early. That kind of beginning can easily become an excuse to stop trying, to surrender to anger, or to live permanently as a victim of what was done to you.\n\nBut T-Bag refused that role.\n\nEven in prison, he didn’t give up. He adapted. He survived. And when they finally broke out, he still didn’t “disappear” the way many people would if they were free. He could have vanished and never been seen again, but instead he continued chasing what he wanted—almost like he needed a reason to keep moving.\n\nThere’s a moment where he meets a woman, and she realizes he’s a wanted man. She calls the cops. What stood out to me is that he doesn’t harm her. He actually seems to love her, and in his own broken way he wants a real life: to be with her and help raise her children. Of course, she can’t accept him once she knows what he’s done—and she shouldn’t have to.\n\nSo he leaves her without hurting her.\n\nAnd then he keeps going—looking for something that feels like purpose, something that makes life worth continuing. In the end, the lesson I pulled from this isn’t that his actions were justified (they weren’t). It’s that even someone deeply damaged can still refuse to be only a product of their past.\n\nHe refuses to be a victim—of prison, of his childhood, or even of his own mind.\n"
+            }
+          ]
+        },
+        {
+          "id": "chatcmpl-DNbmxQLSPP8jEAxrIUXjBhCYQnBo7",
+          "content": "If an image is showing at the top of your post and you want to remove it, it’s likely due to the theme’s default behavior of displaying a featured image. Here’s how you can address it:\n\n### 1) Remove or Comment Out the Image in Front Matter\nIf you have a `feature`, `cover`, or `thumbnail` field in your front matter, remove or comment it out:\n\n```yaml\n---\ntitle: \"There is more to Prison Break than just breaking out of the prison\"\ndate: 2026-03-23T23:12:00\ndraft: false\ndescription: \"A reflection on what Prison Break—especially T-Bag’s story—teaches about trauma, resilience, and refusing a victim mindset.\"\ntags:\n  - lessons\n  - series\ncategories:\n  - Learning\n# feature: \"/images/feature.jpg\"\n# cover: \"/images/cover.jpg\"\n# thumbnail: \"/images/thumbnail.jpg\"\n---\n```\n\n### 2) Check Theme Configuration\nSome themes allow you to disable featured images globally or per post in the configuration file (`config.toml` or `config.yaml`):\n\n```toml\n[params]\n  showFeatureImage = false\n```\n\n### 3) Customize the Theme\nIf the theme doesn’t provide a direct way to disable the image, you can customize the theme’s templates:\n\n- **Locate the Template**: Find the template file responsible for rendering the post header. This is often in `layouts/_default/single.html` or a similar path.\n- **Edit the Template**: Comment out or remove the code that renders the image. Look for something like `{{ .Params.feature }}` or `{{ .Params.cover }}`.\n\n### 4) Use CSS to Hide the Image\nIf you prefer not to edit the theme templates, you can hide the image using CSS:\n\n- Add a custom CSS file or edit your existing one (e.g., `assets/css/custom.css`).\n- Add a rule to hide the image:\n\n```css\n.post-header img {\n  display: none;\n}\n```\n\n### 5) Use a Plugin or Shortcode\nIf you want more control over images on a per-post basis, consider using a Hugo shortcode or plugin that allows you to specify image behavior.\n\n### 6) Check for Theme Updates or Documentation\nSometimes themes update their features or provide new options. Check the Congo theme documentation or GitHub repository for any updates or additional settings.\n\nIf you need help with a specific template file or CSS rule, let me know, and I can guide you through the changes.",
+          "role": "assistant",
+          "timestamp": 1774519180460
+        },
+        {
+          "id": "1774520258262",
+          "content": "not for hugo theme. for the obsidian itself. the image is showing like a banner at the top of properties",
+          "role": "user",
+          "timestamp": 1774520258262
+        },
+        {
+          "id": "chatcmpl-DNc4SNCUjLPsO5J7h9sMiIKstZPhA",
+          "content": "In Obsidian, if an image is showing as a banner at the top of your note due to front matter properties like `cover`, `thumbnail`, or `feature`, it’s likely because of a plugin or a CSS snippet that’s interpreting these fields and displaying the image.\n\n### How to Remove or Customize the Banner Image in Obsidian\n\n#### 1) Check for Plugins\nSome plugins might automatically render images from front matter. Check if you have any of these installed:\n\n- **MetaEdit**: Allows editing front matter and might render images.\n- **Front Matter Title**: Displays front matter properties prominently.\n\nIf you find a plugin responsible, you can either disable it or check its settings for options to hide the image.\n\n#### 2) Use a CSS Snippet\nYou can use a CSS snippet to hide or customize the display of the image.\n\n- **Create a CSS Snippet**:\n  1. Go to **Settings** → **Appearance** → **CSS snippets**.\n  2. Click **Open snippets folder**.\n  3. Create a new file, e.g., `hide-banner.css`.\n\n- **Add CSS to Hide the Image**:\n  ```css\n  .frontmatter-container img {\n    display: none;\n  }\n  ```\n\n- **Enable the Snippet**:\n  1. Go back to **Settings** → **Appearance** → **CSS snippets**.\n  2. Enable your new snippet.\n\n#### 3) Check for Theme Customizations\nIf you’re using a custom theme, it might have built-in support for displaying images from front matter. Check the theme’s documentation or settings for options to disable this feature.\n\n#### 4) Edit the Front Matter\nIf you don’t need the image in the front matter for Obsidian purposes, you can simply remove or comment out the image fields:\n\n```yaml\n---\ntitle: \"My Note\"\ndate: 2026-03-23\n# cover: \"path/to/image.jpg\"\n# thumbnail: \"path/to/image.jpg\"\n# feature: \"path/to/image.jpg\"\n---\n```\n\n### If You Need More Help\nIf you’re unsure which plugin or theme is causing the issue, you can:\n- Temporarily disable plugins one by one to identify the culprit.\n- Switch to the default theme to see if the issue persists.\n\nLet me know if you need further assistance with any of these steps!",
+          "role": "assistant",
+          "timestamp": 1774520265176
+        },
+        {
+          "id": "1774520361143",
+          "content": "make this less than 25 words feature",
+          "role": "user",
+          "timestamp": 1774520361143
+        },
+        {
+          "id": "chatcmpl-DNc67lTq3aoKFJIIuGvFjJyCSImnz",
+          "content": "In Obsidian, hide front matter images with CSS: `.frontmatter-container img { display: none; }` or check plugins/themes for settings.",
+          "role": "assistant",
+          "timestamp": 1774520363994
+        },
+        {
+          "id": "1774520384733",
+          "content": "make this lessthan 25 words While watching *Prison Break*, I kept noticing Theodore “T-Bag” Bagwell—clearly intelligent, clearly dangerous, and doing things most sane people wouldn’t do. But the part that stayed with me wasn’t only the chaos he caused; it was what his story suggests about pain, purpose, and the choice to keep going.",
+          "role": "user",
+          "timestamp": 1774520384733
+        },
+        {
+          "id": "chatcmpl-DNc6Vr302ZFgJSpyt6w3sqcuWOF56",
+          "content": "T-Bag in *Prison Break* is intelligent and dangerous, but his story highlights pain, purpose, and resilience beyond chaos.",
+          "role": "assistant",
+          "timestamp": 1774520387753
         }
       ],
       "createdAt": 1774450636339,
-      "updatedAt": 1774461601958,
+      "updatedAt": 1774520387753,
       "model": {
         "label": "GPT-5.2",
         "value": "gpt-5.2"

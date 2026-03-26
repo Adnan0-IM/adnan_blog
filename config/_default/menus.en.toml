@@ -13,6 +13,11 @@
 [[main]]
   name = "Blog"
   pageRef = "posts"
+  weight = 1
+
+[[main]]
+  name = "About"
+  pageRef = "about"
   weight = 10
 
 [[main]]
@@ -22,17 +27,8 @@
 
 [[main]]
   name = "Categories"
-  pageRef = "Categories"
+  pageRef = "categories"
   weight = 35
-
-[[main]]
-  name = "GitHub"
-  url = "https://github.com/Adnan0-IM/"
-  weight = 40
-  [main.params]
-    icon = "github"
-    showName = false
-    target = "_blank"
 
 [[main]]
   identifier = "search"
@@ -50,7 +46,39 @@
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
+[[footer]]
+  name = "Portfolio"
+  url = "https://adnanilyas.dev/"
+  weight = 1
+  [footer.params]
+    icon = "briefcase"
+    showName = false
+    target = "_blank"
+
+[[footer]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/adnan-aziz/"
+  weight = 10
+  [footer.params]
+    icon = "linkedin"
+    showName = false
+    target = "_blank"
+
+[[footer]]
+  name = "GitHub"
+  url = "https://github.com/Adnan0-IM/"
+  weight = 10
+  [footer.params]
+    icon = "github"
+    showName = false
+    target = "_blank"
+    
+[[footer]]
+  name = "Garden"
+  url = "https://notes.adnanilyas.dev/"
+  weight = 20
+  [footer.params]
+    icon = "seedling"
+    showName = false
+    target = "_blank"
+

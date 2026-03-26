@@ -1,1 +1,0 @@
-<%* await tp.user.new_hugo_post_bundle(tp); %>

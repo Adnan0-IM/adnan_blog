@@ -2,14 +2,18 @@
 title: "MERN & PERN Docker Setup: A Step-by-Step Guide"
 date: 2025-12-27T17:54:01
 draft: false
-description: "A practical guide to Dockerizing MERN and PERN apps using development and production Dockerfiles, plus Docker Compose orchestration."
-tags: [mern, pern, full-stack]
-categories: [development, docker]
+description: A practical guide to Dockerizing MERN and PERN apps using development and production Dockerfiles, plus Docker Compose orchestration.
+tags:
+  - mern
+  - pern
+  - full-stack
+categories:
+  - development
+  - docker
+feature: "*feature*"
+image: "[mern](feature.jpg)"
 ---
 
-Learn how to containerize a MERN or PERN app with Dockerfiles for frontend and backend, then run everything with Docker Compose.
-
-<!--more-->
 
 ### 1. **Introduction**
 

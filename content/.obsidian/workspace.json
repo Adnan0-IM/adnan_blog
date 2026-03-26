@@ -1,33 +1,19 @@
 {
   "main": {
-    "id": "42206a04eef9fbbb",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "f838d3cd3411eba0",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "b2b4969000c89e9e",
+            "id": "f3bb6f7ec5a48722",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/mern-pern-docker-setup/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "1fa1e30bd09f7b12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/peaceful-moment/index.md",
+                "file": "posts/prison-break-lesson/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -35,8 +21,7 @@
               "title": "index"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,45 +205,55 @@
       "random-note:Open random note": false,
       "seo:Open SEO audit panel": false,
       "astro-composer:Open project terminal": false,
-      "astro-composer:Edit astro config": false
+      "astro-composer:Edit astro config": false,
+      "home-base:Open home base": false
     }
   },
-  "active": "1ae5e58b78992bfe",
+  "active": "f3bb6f7ec5a48722",
   "lastOpenFiles": [
+    "bases/Home.base",
+    "posts/mern-pern-docker-setup/index.md",
+    "posts/peaceful-moment/index.md",
+    "posts/peaceful-moment/car.jpg",
+    "posts/mern-pern-docker-setup/feature.jpg",
+    "posts/mern-pern-docker-setup/feature.png",
+    "posts/prison-break-lesson/index.md",
+    "posts/prison-break-lesson/feature.png",
+    "posts/peaceful-moment/feature.png",
+    "posts/test/index.md",
+    "posts/test/feature.png",
+    "posts/_index.md",
+    "post/my-new-post.md",
+    "post",
+    "posts/new/index.md",
+    "posts/test",
+    "posts/hy-new-one/index.md",
     "about.md",
+    "_index.md",
+    "posts/haha-blabla.md",
+    "posts/blabla/index.md",
+    "posts/another-onw/index.md",
+    "posts/blabla",
     "Templates/post-bundle.md",
+    "posts/another-onw",
+    "posts/hy-new-one",
+    "posts/new/cover.png",
+    "posts/new/thumbnail.png",
+    "posts/new/haha-blabla.png",
+    "attachments/haha-blabla.png.md",
+    "attachments",
+    "bases",
+    "posts/new",
     "posts/blabbla-new-blab-bla/index.md",
     "posts/blabbla-new-blab-bla",
-    "posts/peaceful-moment/index.md",
-    "posts/mern-pern-docker-setup/index.md",
     "posts/peaceful-moment-b/index.md",
-    "posts/peaceful-moment",
-    "posts/blabla/index.md",
     "posts/ntitled 1.md",
-    "posts/blabla",
-    "posts/new/index.md",
-    "_index.md",
-    "posts/new",
     "posts/three-four-five/index.md",
-    "posts/three-four-five",
     "posts/one-two-working/index.md",
-    "posts/one-two-working",
     "posts/one-two/index.md",
-    "posts/one-two",
     "posts/blabla-five-one/index.md",
-    "posts/blabla-five-one",
     "posts/blablafive/index.md",
     "Templates/post.md",
-    "posts/index.md",
-    "posts/_index.md",
-    "posts/blablafive",
-    "scripts/new_hugo_post_bundle.js",
-    "scripts/new-hugo-post-bundle.js.md",
-    "posts/prison-break-lesson/index.md",
-    "posts/post-bundle.md",
-    "posts/prison break lesson 1.md",
-    "Templates.md",
-    "posts/another-post/index.md",
-    "posts/tiny-note-better-commit-messages.md"
+    "posts/index.md"
   ]
 }

@@ -8,12 +8,9 @@ tags:
   - series
 categories:
   - Learning
+feature: "*feature*"
+image: "[image](feature.png)"
 ---
-
-While watching *Prison Break*, I kept noticing Theodore “T-Bag” Bagwell—clearly intelligent, clearly dangerous, and doing things most sane people wouldn’t do. But the part that stayed with me wasn’t only the chaos he caused; it was what his story suggests about pain, purpose, and the choice to keep going.
-
-<!--more-->
-
 What seemed to shape Theo into who he became was his abusive father—someone who used him and damaged him early. That kind of beginning can easily become an excuse to stop trying, to surrender to anger, or to live permanently as a victim of what was done to you.
 
 But T-Bag refused that role.
