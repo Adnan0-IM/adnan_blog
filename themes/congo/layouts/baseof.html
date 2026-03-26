@@ -27,7 +27,7 @@
       {{ partial "header/basic.html" . }}
     {{ end }}
     <div class="relative flex grow flex-col">
-      <main id="main-content" class="grow">
+      <main id="main-content" class="grow ">
         {{ block "main" . }}{{ end }}
       </main>
       {{ if .Site.Params.footer.showScrollToTop | default true }}
