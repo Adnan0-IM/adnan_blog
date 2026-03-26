@@ -1,0 +1,57 @@
+
+<div class="flex justify-between flex-row gap-8">
+
+  <!-- Main Content (Left) -->
+  <div class="flex-1">
+    <article class="prose max-w-1/3 dark:prose-invert">
+      {{ with .Title }}
+      <header>
+        <h1>{{ . | emojify }}</h1>
+      </header>
+      {{ end }}
+      <section>{{ .Content | emojify }}</section>
+    </article>
+  </div>
+ <!-- Profile (Right) -->
+  <aside class="md:w-full max-w-xs flex-shrink-0">
+    {{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
+    {{ with .Site.Params.Author.image }}
+      {{ $authorImage := "" }}
+      {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+        {{ $authorImage = resources.GetRemote . }}
+      {{ else }}
+        {{ $authorImage = resources.Get . }}
+      {{ end }}
+      {{ if $authorImage }}
+        {{ $final := $authorImage }}
+        {{ $squareImage := $authorImage }}
+        {{ if not (or $disableImageOptimization (eq $authorImage.MediaType.SubType "svg")) }}
+          {{ $final = $authorImage.Fill (print "288x288 q" ( $.Site.Params.Author.imagequality | default "96" )) }}
+          {{ $shortSide := int (math.Min $authorImage.Width $authorImage.Height) }}
+          {{ $squareImage = $authorImage.Crop (printf "%dx%d" $shortSide $shortSide ) }}
+        {{ end }}
+        <img
+          class="mb-2 h-36 w-36 rounded-full shadow-lg"
+          width="144"
+          height="144"
+          alt="{{ $.Site.Params.Author.name | default `Author` }}"
+          src="{{ $final.RelPermalink }}"
+          data-zoom-src="{{ $squareImage.RelPermalink }}">
+      {{ end }}
+    {{ end }}
+    <div>
+      <h1 class="text-3xl font-bold mb-1">{{ .Site.Params.Author.name | default .Site.Title }}</h1>
+      {{ with .Site.Params.Author.headline }}
+        <h2 class="text-lg text-neutral-500 dark:text-neutral-400 mb-2">{{ . | markdownify }}</h2>
+      {{ end }}
+    </div>
+    <div class="mt-2 text-2xl">
+      {{ partialCached "author-links.html" . }}
+    </div>
+  </aside>
+ 
+</div>
+
+<section class="mt-8">
+  {{ partial "recent-articles/main.html" . }}
+</section>
