@@ -198,3 +198,22 @@ h6 {
     line-height: 1.72;
   }
 }
+
+/* Custom css */
+.link {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  background-color: var(--cp-primary);
+  color: var(--cp-primary-foreground);
+  
+}
+
+.link:hover {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.profile_links {
+  display: flex;
+  gap: 1.25rem;
+}

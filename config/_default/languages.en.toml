@@ -3,7 +3,7 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 1
 
-title = "Adnan's Blog"
+title = "Aimd Blog"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
@@ -15,8 +15,8 @@ title = "Adnan's Blog"
 [params.author]
     name = "Adnan Iliyasu"
     image = "img/author.jpg"
-    headline = "Writing Code, Writing life."
-    bio = "Exploring technology, productivity, and personal growth—sharing lessons from my journey as a developer and lifelong learner, aiming to inspire and help others grow."
+    headline = "Thinking..."
+    bio = ""
     links = [
     #   { email = "mailto:hello@adnanilyas.dev" },
       { link = "https://adnanilyas.dev/" },
