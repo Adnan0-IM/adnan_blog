@@ -58,17 +58,17 @@ fingerprintAlgorithm = "sha256"
   sharingLinks = [
    "facebook",
    "x-twitter",
-  #  "mastodon", 
+   "mastodon", 
    "pinterest",
    "reddit", 
    "linkedin", 
    "email",
    "threads", 
    "telegram", 
-  #  "line",
-  #  "weibo", 
-  #  "xing", 
-  #  "bluesky", 
+   "line",
+   "weibo", 
+   "xing", 
+   "bluesky", 
    ]
 
 [list]
@@ -94,7 +94,7 @@ fingerprintAlgorithm = "sha256"
   # script = ""
 
 [ads]
-  enabled = true
+  enabled = false
   provider = "adsense"
   adsenseClient = "ca-pub-6837357162029073"
   # Only render ads in these Hugo environments (set to [] to allow all).
