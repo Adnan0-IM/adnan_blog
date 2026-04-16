@@ -12,6 +12,6 @@ label = "About Me"
 url = "/about/"
 +++
 
-Welcome to my blog. I share thoughts on life, growth, programming, and lifestyle. Explore the posts and learn more about me.
+This is where I write what I notice — about people, habits, growth, and the things we usually ignore.
 
 {{< profile-links >}}
