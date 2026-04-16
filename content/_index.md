@@ -1,13 +1,17 @@
----
-title: Welcome
-date: 2026-03-18
-description: General post on anything.
----
++++
+title = "Welcome"
+date = 2026-03-18
+description = "General post on anything."
 
-<div class="profile_links" role="profile_links" aria-label="Basic example">
+[[quicklinks]]
+label = "Posts"
+url = "/posts/"
 
-<a class="link" href="/posts/">Posts</a>
-<a class="link" href="/about/">About Me</a>
+[[quicklinks]]
+label = "About Me"
+url = "/about/"
++++
 
+Welcome to my blog. I share thoughts on life, growth, programming, and lifestyle. Explore the posts and learn more about me.
 
-</div>
+{{< profile-links >}}

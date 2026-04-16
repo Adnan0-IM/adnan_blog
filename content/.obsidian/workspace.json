@@ -8,18 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "2e3ed147af115d79",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "bases/Home.base",
-                "viewName": "Posts"
+                "file": "_index.md",
+                "mode": "source",
+                "source": false
               },
-              "pinned": true,
-              "icon": "lucide-home",
-              "title": "Home"
+              "icon": "lucide-file",
+              "title": "_index"
             }
           }
         ]
@@ -210,10 +209,12 @@
       "home-base:Open home base": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "2e3ed147af115d79",
   "lastOpenFiles": [
-    "bases/Home.base",
+    "posts/_index.md",
     "posts/life/the-most-peaceful-moment-for-me/index.md",
+    "_index.md",
+    "bases/Home.base",
     "posts/software/how-to-set-up-docker-for-a-web-app-beginner-guide/index.md",
     "posts/growth/what-t-bag-from-prison-break-taught-me-about-not-playing-the-victim/index.md",
     "posts/notes/small-observations-that-stick-with-me/index.md",
@@ -227,9 +228,7 @@
     "posts/notes/blabla.md",
     "posts/notes/small observations",
     "posts/notes/_index.md",
-    "_index.md",
     "posts/notes/small-observations-that-stick-with-me",
-    "posts/_index.md",
     "posts/new-title/index.md",
     "posts/new-title",
     "about.md",

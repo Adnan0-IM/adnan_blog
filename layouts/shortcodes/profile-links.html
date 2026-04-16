@@ -1,0 +1,7 @@
+{{- $links := .Page.Params.quicklinks -}} {{- if $links -}}
+<div class="profile_links" role="navigation" aria-label="Quick links">
+  {{- range $links }}
+  <a class="quick-link" href="{{ .url }}">{{ .label }}</a>
+  {{- end }}
+</div>
+{{- end -}}

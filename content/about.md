@@ -10,7 +10,7 @@ Hi, I’m Adnan — a developer sharing code, ideas, and personal growth.
 
 I’m focused on improving myself — both technically and personally. This blog is where I share lessons, ideas, and experiences that might be useful or interesting to others.
 
-You can check out my [portfolio](https://adnanilyad.dev/) to see what I’m working on, or connect with me on [LinkedIn](https://linkedin.com/adnanilyas) and [GitHub](https://github.com/Adnan0-IM).
+You can check out my [portfolio](https://adnanilyas.dev/) to see what I’m working on, or connect with me on [LinkedIn](www.linkedin.com/in/adnan-iliyasu-90961028a) and [GitHub](https://github.com/Adnan0-IM).
 
 ### About Me
 
